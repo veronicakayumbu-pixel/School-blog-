@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Project | Geography Blog</title>
+    <meta
+      name="description"
+      content="Educational geography blog for students exploring the Earth, climate, landscapes, and global cultures."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="particles" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">GQ</span>
+          <span>GeoQuest</span>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#featured">Featured</a>
+          <a href="#topics">Topics</a>
+          <a href="#resources">Resources</a>
+          <a href="#newsletter">Newsletter</a>
+          <a href="multimedia.html">Media</a>
+          <a href="interaction.html">Quiz</a>
+        </nav>
+        <button class="nav-button">Join the Club</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">For geography students</p>
+            <h1>Weather instruments made simple and exciting.</h1>
+            <p class="lead">
+              Explore how temperature, rainfall, wind, and air pressure are measured and why these tools help us understand the world around us.
+            </p>
+            <p class="lead">
+              This blog brings together lessons, visual resources, and learner activities so students can build confidence in weather and climate studies.
+            </p>
+
+            <div class="hero-actions">
+              <a href="learning.html" class="primary-btn">Start learning</a>
+              <a href="multimedia.html" class="secondary-btn">Watch media</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Key geography stats">
+              <li><strong>5</strong><span>Key instruments</span></li>
+              <li><strong>6</strong><span>Weather topics</span></li>
+              <li><strong>1</strong><span>Complete learning path</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Geography education illustration">
+            <div class="map-card card-glow">
+              <div class="map-image"></div>
+              <div class="floating-note note-top">
+                <span class="dot green"></span>
+                <div>
+                  <small>Current theme</small>
+                  <strong>Weather tools</strong>
+                </div>
+              </div>
+              <div class="floating-note note-bottom">
+                <span class="dot gold"></span>
+                <div>
+                  <small>Field fact</small>
+                  <strong>Climate patterns</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured" id="featured">
+        <div class="container section-header">
+          <div>
+            <p class="eyebrow">Highlights</p>
+            <h2>Why weather instruments matter</h2>
+          </div>
+          <a href="#topics">View all posts</a>
+        </div>
+
+        <div class="container feature-layout">
+          <article class="feature-card large-card">
+            <div class="feature-image image-weather-tools"></div>
+            <div class="feature-content">
+              <span class="badge">Instruments</span>
+              <h3>How do weather instruments help us understand the atmosphere?</h3>
+              <p>
+                Weather tools help us measure temperature, rainfall, wind, and air pressure so we can describe conditions accurately and anticipate changes.
+              </p>
+              <p>
+                These measurements are important for forecasting, farming, travel, and protecting communities from extreme weather events.
+              </p>
+              <div class="meta-row">
+                <span>5 min read</span>
+                <span>By Mr Oiva</span>
+              </div>
+            </div>
+          </article>
+
+          <aside class="mini-features">
+            <article class="feature-card small-card">
+              <div class="mini-thumb thumb-climate"></div>
+              <div class="mini-copy">
+                <span class="badge alt">Climate</span>
+                <h3>Why tropical regions stay warm all year</h3>
+              </div>
+            </article>
+
+            <article class="feature-card small-card">
+              <div class="mini-thumb thumb-river"></div>
+              <div class="mini-copy">
+                <span class="badge alt">Weather</span>
+                <h3>How weather shapes daily life and decision-making</h3>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="topics" id="topics">
+        <div class="container section-header">
+          <div>
+            <p class="eyebrow">Browse topics</p>
+            <h2>Weather stories for curious learners</h2>
+          </div>
+          <div class="filter-bar" aria-label="Article filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="weather">Weather</button>
+            <button class="filter-btn" data-filter="climate">Climate</button>
+            <button class="filter-btn" data-filter="instruments">Instruments</button>
+          </div>
+        </div>
+
+        <div class="container article-grid">
+          <article class="post-card" data-category="weather">
+            <div class="post-image image-weather-one"></div>
+            <div class="post-body">
+              <span class="badge">Weather</span>
+              <h3>How do weather instruments help us understand the weather?</h3>
+              <p>Discover how temperature, rainfall, wind speed, wind direction, and air pressure are observed and recorded.</p>
+              <div class="meta-row">
+                <span>5 min read</span>
+                <span>June 14</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="instruments">
+            <div class="post-image image-weather-two"></div>
+            <div class="post-body">
+              <span class="badge">Instruments</span>
+              <h3>Why is it important to measure the weather?</h3>
+              <p>Find out how weather data helps people plan safely, prepare for storms, and make informed decisions.</p>
+              <div class="meta-row">
+                <span>6 min read</span>
+                <span>June 21</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="climate">
+            <div class="post-image image-weather-three"></div>
+            <div class="post-body">
+              <span class="badge">Climate</span>
+              <h3>How rainfall and drought affect communities</h3>
+              <p>Learn how too much rain or too little rain changes farming, water supply, and daily life in different regions.</p>
+              <div class="meta-row">
+                <span>7 min read</span>
+                <span>July 5</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="weather">
+            <div class="post-image image-weather-four"></div>
+            <div class="post-body">
+              <span class="badge">Weather</span>
+              <h3>Why heatwaves can be dangerous for people and animals</h3>
+              <p>Explore how rising temperatures affect health, crops, and the way communities prepare during extreme heat.</p>
+              <div class="meta-row">
+                <span>4 min read</span>
+                <span>July 11</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="climate">
+            <div class="post-image image-weather-five"></div>
+            <div class="post-body">
+              <span class="badge">Climate</span>
+              <h3>Why coastal climates feel different from inland areas</h3>
+              <p>Compare humidity, sea breezes, and temperature patterns near the coast and far from the ocean.</p>
+              <div class="meta-row">
+                <span>5 min read</span>
+                <span>July 18</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card" data-category="instruments">
+            <div class="post-image image-weather-six"></div>
+            <div class="post-body">
+              <span class="badge">Instruments</span>
+              <h3>How a barometer helps predict storms</h3>
+              <p>Understand how air pressure readings help meteorologists forecast cloudy skies, rain, and sudden weather changes.</p>
+              <div class="meta-row">
+                <span>6 min read</span>
+                <span>July 28</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="resources" id="resources">
+        <div class="container section-header">
+          <div>
+            <p class="eyebrow">Study resources</p>
+            <h2>Build confidence for class and projects</h2>
+          </div>
+        </div>
+
+        <div class="container resource-grid">
+          <div class="resource-card">
+            <div class="icon">🗺️</div>
+            <h3>Map skills</h3>
+            <p>Practice reading scales, legends, contour lines, and coordinates.</p>
+          </div>
+          <div class="resource-card">
+            <div class="icon">🌍</div>
+            <h3>Case studies</h3>
+            <p>Compare real places affected by climate change, migration, and tourism.</p>
+          </div>
+          <div class="resource-card">
+            <div class="icon">📘</div>
+            <h3>Exam tips</h3>
+            <p>Turn complex topics into concise answers with strong examples and evidence.</p>
+          </div>
+        </div>
+
+        <div class="container lesson-cta-wrap">
+          <a href="learning.html" class="primary-btn lesson-cta-btn">Open lesson page</a>
+        </div>
+      </section>
+
+      <section class="newsletter" id="newsletter">
+        <div class="container newsletter-box">
+          <div>
+            <p class="eyebrow">Stay curious</p>
+            <h2>Get weekly geography insights in your inbox.</h2>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" aria-label="Email address" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">GQ</span>
+            <span>GeoQuest</span>
+          </div>
+          <p>Making geography engaging, accessible, and unforgettable.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#featured">Featured</a>
+          <a href="#topics">Topics</a>
+          <a href="#resources">Resources</a>
+        </div>
+        <p class="copyright">© <span id="year"></span> GeoQuest</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interaction | GeoQuest</title>
+    <meta
+      name="description"
+      content="Learner interaction page with a short weather quiz for geography students."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="learning-page">
+    <div id="particles" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">GQ</span>
+          <span>GeoQuest</span>
+        </div>
+        <nav class="main-nav quiz-top-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <span class="nav-page-tag">Quiz</span>
+        </nav>
+        <a href="index.html" class="nav-button">Back to Home</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero" id="quiz">
+        <div class="container page-hero-inner">
+          <div>
+            <span class="page-badge">Learner Interaction</span>
+            <h1>Check your understanding</h1>
+            <p>
+              Test what you have learned about weather instruments and how they help us measure the
+              atmosphere and predict conditions.
+            </p>
+          </div>
+
+          <div class="page-hero-card">
+            <h3>Quick tip</h3>
+            <ul class="lesson-checklist">
+              <li>Read each question carefully.</li>
+              <li>Choose the best answer you think is correct.</li>
+              <li>Review the feedback to learn from mistakes.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="learning-section">
+        <div class="container quiz-grid">
+          <div class="quiz-panel">
+            <div class="quiz-header-row">
+              <div>
+                <span class="badge">Assessment</span>
+                <h3>Weather Knowledge Check</h3>
+              </div>
+              <span class="quiz-score-chip">20 questions</span>
+            </div>
+
+            <div class="quiz-brief">
+              <p>
+                Choose the best answer in each case. This challenge tests your understanding of weather
+                instruments, data collection, and the systems that shape changing weather conditions.
+              </p>
+            </div>
+
+            <form class="quiz-form">
+              <div class="quiz-section-label">Section A: Measuring the weather</div>
+
+              <div class="quiz-question" data-answer="thermometer" data-correct-label="thermometer">
+                <h4>1. Which instrument is used to measure temperature?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q1" value="thermometer" /> Thermometer</label>
+                  <label><input type="radio" name="q1" value="rain-gauge" /> Rain gauge</label>
+                  <label><input type="radio" name="q1" value="wind-vane" /> Wind vane</label>
+                  <label><input type="radio" name="q1" value="barometer" /> Barometer</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="barometer" data-correct-label="barometer">
+                <h4>2. Which instrument measures air pressure?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q2" value="anemometer" /> Anemometer</label>
+                  <label><input type="radio" name="q2" value="barometer" /> Barometer</label>
+                  <label><input type="radio" name="q2" value="thermometer" /> Thermometer</label>
+                  <label><input type="radio" name="q2" value="rain-gauge" /> Rain gauge</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="anemometer" data-correct-label="anemometer">
+                <h4>3. Which instrument measures wind speed?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q3" value="wind-vane" /> Wind vane</label>
+                  <label><input type="radio" name="q3" value="anemometer" /> Anemometer</label>
+                  <label><input type="radio" name="q3" value="thermometer" /> Thermometer</label>
+                  <label><input type="radio" name="q3" value="rain-gauge" /> Rain gauge</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="rain-gauge" data-correct-label="rain gauge">
+                <h4>4. Which instrument is used to measure rainfall?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q4" value="thermometer" /> Thermometer</label>
+                  <label><input type="radio" name="q4" value="rain-gauge" /> Rain gauge</label>
+                  <label><input type="radio" name="q4" value="barometer" /> Barometer</label>
+                  <label><input type="radio" name="q4" value="anemometer" /> Anemometer</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="wind-vane" data-correct-label="wind vane">
+                <h4>5. Which instrument tells us the direction from which the wind is blowing?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q5" value="rain-gauge" /> Rain gauge</label>
+                  <label><input type="radio" name="q5" value="wind-vane" /> Wind vane</label>
+                  <label><input type="radio" name="q5" value="thermometer" /> Thermometer</label>
+                  <label><input type="radio" name="q5" value="barometer" /> Barometer</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-section-label">Section B: Interpreting weather and climate</div>
+
+              <div class="quiz-question" data-answer="rising-air-cools" data-correct-label="air cools as it rises">
+                <h4>6. Why do clouds often form when warm air rises?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q6" value="rising-air-cools" /> The rising air cools and water vapour condenses</label>
+                  <label><input type="radio" name="q6" value="clouds-create-wind" /> Clouds push air downward</label>
+                  <label><input type="radio" name="q6" value="sunlight-makes-rain" /> Sunlight turns clouds into rain instantly</label>
+                  <label><input type="radio" name="q6" value="air-pressure-heats" /> Air pressure adds moisture to the air</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="storm-warning" data-correct-label="a storm warning">
+                <h4>7. A sharp drop in air pressure usually indicates which of the following?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q7" value="storm-warning" /> A storm warning or unsettled weather</label>
+                  <label><input type="radio" name="q7" value="clear-sky" /> Clear and dry weather</label>
+                  <label><input type="radio" name="q7" value="fog-free" /> A sudden drop in temperature only</label>
+                  <label><input type="radio" name="q7" value="no-change" /> No change in weather</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="climate" data-correct-label="climate">
+                <h4>8. Which term describes the average weather conditions of a place over a long time?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q8" value="forecast" /> Forecast</label>
+                  <label><input type="radio" name="q8" value="climate" /> Climate</label>
+                  <label><input type="radio" name="q8" value="humidity" /> Humidity</label>
+                  <label><input type="radio" name="q8" value="pressure" /> Pressure</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="data-collection" data-correct-label="collecting reliable weather data">
+                <h4>9. Why are weather stations important in geography?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q9" value="data-collection" /> They collect reliable data to help predict and understand weather</label>
+                  <label><input type="radio" name="q9" value="cloud-shapes" /> They create clouds in the sky</label>
+                  <label><input type="radio" name="q9" value="plant-growth" /> They control the growth of plants</label>
+                  <label><input type="radio" name="q9" value="sun-cycle" /> They keep the sun moving around Earth</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="rainfall" data-correct-label="rainfall">
+                <h4>10. Which weather element tells us how much water falls from the sky in a period of time?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q10" value="humidity" /> Humidity</label>
+                  <label><input type="radio" name="q10" value="rainfall" /> Rainfall</label>
+                  <label><input type="radio" name="q10" value="wind-speed" /> Wind speed</label>
+                  <label><input type="radio" name="q10" value="sunlight" /> Sunlight</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-section-label">Section C: Weather patterns and forecasting</div>
+
+              <div class="quiz-question" data-answer="cold-front" data-correct-label="a cold front">
+                <h4>11. What is a cold front?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q11" value="cold-front" /> A boundary where cold air moves in and pushes warm air upward</label>
+                  <label><input type="radio" name="q11" value="warm-dry" /> A dry region with no clouds</label>
+                  <label><input type="radio" name="q11" value="rain-window" /> A place with permanent rainfall</label>
+                  <label><input type="radio" name="q11" value="snow-zone" /> A line of mountains that blocks wind</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="humidity" data-correct-label="humidity">
+                <h4>12. What does humidity measure?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q12" value="temperature" /> Air temperature</label>
+                  <label><input type="radio" name="q12" value="humidity" /> The amount of water vapour in the air</label>
+                  <label><input type="radio" name="q12" value="pressure" /> The force of wind</label>
+                  <label><input type="radio" name="q12" value="sunlight" /> The direction of sunlight</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="convection" data-correct-label="convection">
+                <h4>13. Which process helps move warm air upward and cool air downward in the atmosphere?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q13" value="convection" /> Convection</label>
+                  <label><input type="radio" name="q13" value="erosion" /> Erosion</label>
+                  <label><input type="radio" name="q13" value="condensation" /> Condensation</label>
+                  <label><input type="radio" name="q13" value="frost" /> Frost</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="evaporation" data-correct-label="evaporation">
+                <h4>14. What is the name of the process in which liquid water changes into water vapour?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q14" value="condensation" /> Condensation</label>
+                  <label><input type="radio" name="q14" value="evaporation" /> Evaporation</label>
+                  <label><input type="radio" name="q14" value="precipitation" /> Precipitation</label>
+                  <label><input type="radio" name="q14" value="transpiration" /> Transpiration</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="precipitation" data-correct-label="precipitation">
+                <h4>15. Which word refers to water falling from the atmosphere to Earth?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q15" value="evaporation" /> Evaporation</label>
+                  <label><input type="radio" name="q15" value="precipitation" /> Precipitation</label>
+                  <label><input type="radio" name="q15" value="insolation" /> Insolation</label>
+                  <label><input type="radio" name="q15" value="deflation" /> Deflation</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="weather-forecast" data-correct-label="a weather forecast">
+                <h4>16. Which of these helps people prepare for daily conditions such as rain or sunshine?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q16" value="weather-forecast" /> A weather forecast</label>
+                  <label><input type="radio" name="q16" value="soil-map" /> A soil map</label>
+                  <label><input type="radio" name="q16" value="population-chart" /> A population chart</label>
+                  <label><input type="radio" name="q16" value="river-shape" /> A river shape diagram</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="altitude" data-correct-label="altitude">
+                <h4>17. Temperature often becomes lower as the altitude of a place increases. This is because of:</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q17" value="altitude" /> Higher altitude and thinner air</label>
+                  <label><input type="radio" name="q17" value="cloud-cover" /> More sunlight at high levels</label>
+                  <label><input type="radio" name="q17" value="rain-fall" /> More rain on mountain tops</label>
+                  <label><input type="radio" name="q17" value="forest-cover" /> More forests at high elevation</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="stratus" data-correct-label="stratus clouds">
+                <h4>18. Which type of cloud is usually associated with cloudy, dull weather and low rain?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q18" value="cumulus" /> Cumulus clouds</label>
+                  <label><input type="radio" name="q18" value="stratus" /> Stratus clouds</label>
+                  <label><input type="radio" name="q18" value="cirrus" /> Cirrus clouds</label>
+                  <label><input type="radio" name="q18" value="nimbus" /> Nimbus clouds</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="drought" data-correct-label="drought">
+                <h4>19. What do we call a long period with very little rainfall?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q19" value="flood" /> Flood</label>
+                  <label><input type="radio" name="q19" value="drought" /> Drought</label>
+                  <label><input type="radio" name="q19" value="storm" /> Storm</label>
+                  <label><input type="radio" name="q19" value="mist" /> Mist</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-question" data-answer="forecasting" data-correct-label="forecasting">
+                <h4>20. Why do meteorologists study weather data from many places?</h4>
+                <div class="quiz-options">
+                  <label><input type="radio" name="q20" value="forecasting" /> To make accurate weather forecasts and warn communities</label>
+                  <label><input type="radio" name="q20" value="decorating" /> To decorate maps for display</label>
+                  <label><input type="radio" name="q20" value="building" /> To decide how to construct roads</label>
+                  <label><input type="radio" name="q20" value="planting" /> To choose plant colours only</label>
+                </div>
+                <div class="question-feedback"></div>
+              </div>
+
+              <div class="quiz-actions">
+                <button type="submit" class="primary-btn">Submit Answers</button>
+                <button type="button" class="secondary-btn quiz-reset-btn">Try Again</button>
+                <span class="quiz-result" hidden></span>
+              </div>
+            </form>
+          </div>
+
+          <aside class="quiz-card">
+            <div class="media-visual video-one" aria-label="Study illustration"></div>
+            <div class="media-copy">
+              <span class="badge">Study reminder</span>
+              <h3>Weather essentials</h3>
+              <p>
+                Weather instruments help us collect accurate information so we can understand the atmosphere,
+                forecast future conditions, and make safe decisions.
+              </p>
+
+              <div class="mini-study-list">
+                <div>
+                  <strong>🌡️</strong>
+                  <span>Temperature shows how hot or cold the air is.</span>
+                </div>
+                <div>
+                  <strong>🌧️</strong>
+                  <span>Rainfall tells us how much water falls in a period.</span>
+                </div>
+                <div>
+                  <strong>💨</strong>
+                  <span>Wind speed and direction show how air moves.</span>
+                </div>
+                <div>
+                  <strong>📈</strong>
+                  <span>Air pressure helps predict changing weather conditions.</span>
+                </div>
+              </div>
+
+              <div class="quiz-tip-grid">
+                <div>
+                  <strong>1</strong>
+                  <span>Measure</span>
+                </div>
+                <div>
+                  <strong>2</strong>
+                  <span>Compare</span>
+                </div>
+                <div>
+                  <strong>3</strong>
+                  <span>Predict</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="learning-section">
+        <div class="container">
+          <div class="full-width-info">
+            <div class="info-block">
+              <span class="badge">Quick challenge</span>
+              <h3>Weather detective checklist</h3>
+              <p>Before you answer a weather question, think about what condition is being measured and which instrument gives the most accurate reading.</p>
+            </div>
+
+            <div class="info-block">
+              <span class="badge alt">Revision tip</span>
+              <h3>Remember the pattern</h3>
+              <p>Temperature tells us heat, rainfall tells us moisture, wind measures movement, and pressure helps predict changes in the atmosphere.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learning-section">
+        <div class="container">
+          <div class="assessment-links-panel">
+            <div class="assessment-links-header">
+              <span class="badge">Online assessment</span>
+              <h3>Google Form and worksheet</h3>
+            </div>
+
+            <div class="assessment-links-grid">
+              <a class="assessment-link primary" href="https://docs.google.com/forms/" target="_blank" rel="noreferrer">
+                Open Google Form Quiz
+              </a>
+              <a class="assessment-link" href="assets/weather-worksheet.pdf" download>
+                Download Worksheet PDF
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learning-section">
+        <div class="container">
+          <div class="discussion-panel">
+            <div class="discussion-header">
+              <span class="badge">Discussion</span>
+              <h3>Class discussion questions</h3>
+            </div>
+
+            <div class="discussion-grid">
+              <div class="discussion-card">
+                <h4>1. Why do we need different weather instruments?</h4>
+                <p>Discuss how temperature, rainfall, wind, and pressure give us different pieces of weather information.</p>
+              </div>
+
+              <div class="discussion-card">
+                <h4>2. How can weather affect daily life?</h4>
+                <p>Think about how people plan school, travel, farming, and safety using weather data.</p>
+              </div>
+
+              <div class="discussion-card">
+                <h4>3. Why is forecasting important?</h4>
+                <p>Explain how meteorologists use measurements to warn people about storms and other changes.</p>
+              </div>
+
+              <div class="discussion-card">
+                <h4>4. How is climate different from weather?</h4>
+                <p>Compare short-term conditions with long-term patterns in a place over many years.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">GQ</span>
+            <span>GeoQuest</span>
+          </div>
+          <p>Making geography engaging, accessible, and unforgettable.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="learning.html">Lesson</a>
+          <a href="multimedia.html">Media</a>
+        </div>
+        <p class="copyright">© <span id="year"></span> GeoQuest</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
